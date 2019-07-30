@@ -1,19 +1,34 @@
-body {
-  text-align: center;
-  background-color: #f0e8c5;
+#top-left{
+    width: 50vw;
+    height: 15vh;
+    background-color: blue;
 }
 
-div {
-  margin-top: 15px;
+#bottom-right{
+    width: 50vw;
+    height: 15vh;
+    position: relative;
+    left: 50%;
+    background-color: aqua;
+}
+body{
+    overflow-x: hidden;
+}
+.change-text-span{
+    transition: 5s ease;
+}
+.shift-left{
+    position: absolute;
+    top: 0%;
+    left: 0%;
 }
 
-.image-section {
-  display: flex;
-  justify-content: center;
+.change-image{
+    position: absolute;
+    top:0px;
+    right:80px;
 }
 
-.section-style {
-  margin-right: 25px;
-  margin-left: 25px;
-  background-color: blue;
+.date-and-time,.date{
+    text-align: center;
 }
