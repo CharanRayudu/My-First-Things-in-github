@@ -1,18 +1,36 @@
-import socket
-HOST='127.0.0.1'
-PORT = 8000
-listen_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-listen_socket.bind((HOST,PORT))
-listen.socket.listen(2)
-connection,address = listen_socket.accept()
-request = connection.recv(1024)
-connection.sendall(""""HTTP/1.1 200 OK
-Content-type : text/html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="locationDemo"></h1>
+    <form action="" method="POST">
+        <h1>Create Your Account</h1>
+        <p>Username: <input type="text" name="name" id="hmm" aria-label="Enter your Name"></p>
+        <p>Password: <input type="password" name="passkey" id="passk"></p>
+        <input type="submit" value="Validate">
+    </form>
+    <script>
+        var x=document.getElementById("locationDemo");
+        function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+        }
 
+        function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude; 
+        }
 
-<html>
-   <body>
-    <h1>Hello, World</h1>
-    </body>
-</html>"""")
-connection.close()
+        // getLocation();
+        va
+    </script>
+</body>
+</html>
