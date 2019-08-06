@@ -1,36 +1,33 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>MyWebpage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="locationDemo"></h1>
-    <form action="" method="POST">
-        <h1>Create Your Account</h1>
-        <p>Username: <input type="text" name="name" id="hmm" aria-label="Enter your Name"></p>
-        <p>Password: <input type="password" name="passkey" id="passk"></p>
-        <input type="submit" value="Validate">
-    </form>
-    <script>
-        var x=document.getElementById("locationDemo");
-        function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-            x.innerHTML = "Geolocation is not supported by this browser.";
-        }
-        }
+        <img src="./cav.png" alt="" class="change-image">
+        <img src="./lesion.png" alt="" class="hover-alert">
+        <img src="./download.png" alt="" class="click-alert">
+    <div id="top-left" >
+        <h1 class="date-and-time">
 
-        function showPosition(position) {
-        x.innerHTML = "Latitude: " + position.coords.latitude + 
-        "<br>Longitude: " + position.coords.longitude; 
-        }
+        </h1>
+    </div>
+    <h1 style="color: black">Rainbow six siege game is tactical</h1>
+    <p style="color: blue; font-family:'Courier New', Courier, monospace"> Tom Clancy's Rainbow Six Siege is an online tactical shooter video game developed by Ubisoft Montreal and published by Ubisoft. It was released worldwide for Microsoft Windows, PlayStation 4, and Xbox One on December 1, 2015. The game puts heavy emphasis on environmental destruction and cooperation between players.</p>
+    <a href="https://www.google.co.in" style="text-decoration: none;" target="_blank">Link to Google</a>
+    <h2><a href="https://www.bing.com" style="text-decoration: none;">Link to Bing</a></h2>
 
-        // getLocation();
-        va
-    </script>
+    <span class="change-text-span">
+        <h1>Hello</h1>
+    </span>
+    <button type="button" id="change-text">Click to change the text</button>   
+
+    <div id="bottom-right">
+        <h1 class="date"></h1>
+    </div>
+    <script src="./first.js"></script>
 </body>
 </html>
