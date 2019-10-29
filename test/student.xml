@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Student>
+    <firstName>Jon</firstName>
+    <lastName>Favreau</lastName>
+    <middleName>Keegan</middleName>
+    <rollNumber>111</rollNumber>
+    <subject1>85</subject1>
+    <subject2>95</subject2>
+    <subject3>90</subject3>
+</Student>

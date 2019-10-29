@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Map API</title>
+</head>
+<body>
+    <div id="mapper" style="height: 50vh;width:50vw;"></div>
+    <script>
+        var apiKey="AIzaSyD7Qno8G_LyQs6XOIByaA1RAegxmpHrKKY";
+        var openApiKey="73be60b17ef66f2977f6fe67f489d223";
+        var map;
+        function initMap(){
+            var mapOptions={
+                zoom:14,
+                center:{lat:16.5167,lng:80.6167}
+            }
+            map=new google.maps.Map(document.getElementById("mapper"),mapOptions);
+            var marker=new google.maps.Marker({position:mapOptions.center,map:map});
+            console.log(map);
+        }
+        
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Qno8G_LyQs6XOIByaA1RAegxmpHrKKY&callback=initMap"
+    async defer></script>
+</body>
+</html>

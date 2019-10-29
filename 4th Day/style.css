@@ -1,0 +1,34 @@
+#top-left{
+    width: 50vw;
+    height: 15vh;
+    background-color: blue;
+}
+
+#bottom-right{
+    width: 50vw;
+    height: 15vh;
+    position: relative;
+    left: 50%;
+    background-color: aqua;
+}
+body{
+    overflow-x: hidden;
+}
+.change-text-span{
+    transition: 5s ease;
+}
+.shift-left{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.change-image{
+    position: absolute;
+    top:0px;
+    right:80px;
+}
+
+.date-and-time,.date{
+    text-align: center;
+}

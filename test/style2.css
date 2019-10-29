@@ -1,0 +1,37 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#div1{
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+    width: 10vw;
+    height: 100vh;
+}
+section{
+    height: 100vh;
+    display: flex;
+    align-content: flex-end;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+li a{
+    list-style: none;
+}
+ul{
+    list-style: none;
+    height: 100vh;
+}
+ul li{
+    padding: 15px;
+    margin: 0.25rem;
+}
+h1{
+    padding-left: 1.2em; 
+    padding-top: 15px;
+    font-size: 64px;
+}

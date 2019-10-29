@@ -1,0 +1,12 @@
+h1{
+    color: red;
+}
+p{
+    color: aqua;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    pointer-events: painted;
+}
